@@ -1,6 +1,10 @@
+### Purpose
+
 Log file lines should be prefixed with log level, timestamp, process id and an easy-to-grep "end of prefix" marker.  This subclass of Logger::Formatter does those things.
 
-## Example IRB Usage
+It also ensures that every line in the log is prefixed, even if the log messages themselves have newlines in them.
+
+### Example IRB Usage
 
     # install gem
     gem install prefixed-log-formatter
@@ -13,7 +17,7 @@ Log file lines should be prefixed with log level, timestamp, process id and an e
     logger.formatter = PrefixedLogFormatter::Formatter.new
     logger.debug 'hi'
 
-## Example Rails usage
+### Example Rails usage
 
     # add to your Gemfile
     gem "prefixed-log-formatter"
@@ -28,7 +32,7 @@ Log file lines should be prefixed with log level, timestamp, process id and an e
     Rails.logger.info 'info'
     # etc...
 
-## Customize the prefix separator
+### Customize the prefix separator
 
 The default is ':::'
 
