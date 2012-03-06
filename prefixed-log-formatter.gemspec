@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = PrefixedLogFormatter::VERSION
   s.authors     = ["Jordan Brough"]
   s.email       = ["jordan@animoto.com"]
-  s.homepage    = "http://github.com/jordan-brough/prefixed-logger-formatter"
+  s.homepage    = "http://github.com/jordan-brough/prefixed-log-formatter"
   s.summary     = "Sensible and minimal log prefixng for Ruby apps"
   s.description = %q{Log file lines should be prefixed with log level, timestamp, process id and an easy-to-grep "end of prefix" marker.  This subclass of Logger::Formatter does those things.}
 
